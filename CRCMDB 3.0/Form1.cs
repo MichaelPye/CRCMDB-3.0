@@ -28,5 +28,11 @@ namespace CRCMDB_3._0
             ActorForm ActForm = new ActorForm();
             ActForm.Show();
         }
+
+        private void ManageGenresButton_Click(object sender, EventArgs e)
+        {
+            GenreList genreList = new GenreList();
+            genreList.Show();
+        }
     }
 }

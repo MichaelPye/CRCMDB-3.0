@@ -72,11 +72,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CRCMDB1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CRCMDB2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCMDB2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreList.Designer.cs">
+      <DependentUpon>GenreList.cs</DependentUpon>
     </Compile>
     <Compile Include="MovieDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenreList.resx">
+      <DependentUpon>GenreList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovieForm.resx">
       <DependentUpon>MovieForm.cs</DependentUpon>
@@ -119,6 +133,17 @@
     </None>
     <None Include="CRCMDB1DataSet.xss">
       <DependentUpon>CRCMDB1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CRCMDB2DataSet.xsc">
+      <DependentUpon>CRCMDB2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CRCMDB2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CRCMDB2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRCMDB2DataSet.xss">
+      <DependentUpon>CRCMDB2DataSet.xsd</DependentUpon>
     </None>
     <None Include="MovieDataSet.xsc">
       <DependentUpon>MovieDataSet.xsd</DependentUpon>
@@ -145,15 +170,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CRCMDB1.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="CRCMDB1_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>CRCMDB1.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -164,6 +180,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CRCMDB2.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CRCMDB2_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>CRCMDB2.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,7 +36,7 @@
             // ManageMoviesButton
             // 
             this.ManageMoviesButton.Location = new System.Drawing.Point(16, 39);
-            this.ManageMoviesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ManageMoviesButton.Margin = new System.Windows.Forms.Padding(4);
             this.ManageMoviesButton.Name = "ManageMoviesButton";
             this.ManageMoviesButton.Size = new System.Drawing.Size(124, 28);
             this.ManageMoviesButton.TabIndex = 0;
@@ -47,7 +47,7 @@
             // ManageActorsButton
             // 
             this.ManageActorsButton.Location = new System.Drawing.Point(148, 39);
-            this.ManageActorsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ManageActorsButton.Margin = new System.Windows.Forms.Padding(4);
             this.ManageActorsButton.Name = "ManageActorsButton";
             this.ManageActorsButton.Size = new System.Drawing.Size(124, 28);
             this.ManageActorsButton.TabIndex = 1;
@@ -58,12 +58,13 @@
             // ManageGenresButton
             // 
             this.ManageGenresButton.Location = new System.Drawing.Point(280, 39);
-            this.ManageGenresButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ManageGenresButton.Margin = new System.Windows.Forms.Padding(4);
             this.ManageGenresButton.Name = "ManageGenresButton";
             this.ManageGenresButton.Size = new System.Drawing.Size(124, 28);
             this.ManageGenresButton.TabIndex = 2;
             this.ManageGenresButton.Text = "Manage Genres";
             this.ManageGenresButton.UseVisualStyleBackColor = true;
+            this.ManageGenresButton.Click += new System.EventHandler(this.ManageGenresButton_Click);
             // 
             // Form1
             // 
@@ -73,7 +74,7 @@
             this.Controls.Add(this.ManageGenresButton);
             this.Controls.Add(this.ManageActorsButton);
             this.Controls.Add(this.ManageMoviesButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "CRCMDB";
             this.ResumeLayout(false);
