@@ -16,5 +16,11 @@ namespace CRCMDB_3._0
         {
             InitializeComponent();
         }
+        // Opens Up Movie Management Form
+        private void ManageMoviesButton_Click(object sender, EventArgs e)
+        {
+                MovieForm MovForm = new MovieForm();
+                MovForm.Show();
+        }
     }
 }
