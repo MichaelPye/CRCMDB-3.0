@@ -22,5 +22,11 @@ namespace CRCMDB_3._0
                 MovieForm MovForm = new MovieForm();
                 MovForm.Show();
         }
+
+        private void ManageActorsButton_Click(object sender, EventArgs e)
+        {
+            ActorForm ActForm = new ActorForm();
+            ActForm.Show();
+        }
     }
 }

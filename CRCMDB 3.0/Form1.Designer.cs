@@ -35,9 +35,10 @@
             // 
             // ManageMoviesButton
             // 
-            this.ManageMoviesButton.Location = new System.Drawing.Point(12, 32);
+            this.ManageMoviesButton.Location = new System.Drawing.Point(16, 39);
+            this.ManageMoviesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ManageMoviesButton.Name = "ManageMoviesButton";
-            this.ManageMoviesButton.Size = new System.Drawing.Size(93, 23);
+            this.ManageMoviesButton.Size = new System.Drawing.Size(124, 28);
             this.ManageMoviesButton.TabIndex = 0;
             this.ManageMoviesButton.Text = "Manage Movies";
             this.ManageMoviesButton.UseVisualStyleBackColor = true;
@@ -45,30 +46,34 @@
             // 
             // ManageActorsButton
             // 
-            this.ManageActorsButton.Location = new System.Drawing.Point(111, 32);
+            this.ManageActorsButton.Location = new System.Drawing.Point(148, 39);
+            this.ManageActorsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ManageActorsButton.Name = "ManageActorsButton";
-            this.ManageActorsButton.Size = new System.Drawing.Size(93, 23);
+            this.ManageActorsButton.Size = new System.Drawing.Size(124, 28);
             this.ManageActorsButton.TabIndex = 1;
             this.ManageActorsButton.Text = "Manage Actors";
             this.ManageActorsButton.UseVisualStyleBackColor = true;
+            this.ManageActorsButton.Click += new System.EventHandler(this.ManageActorsButton_Click);
             // 
             // ManageGenresButton
             // 
-            this.ManageGenresButton.Location = new System.Drawing.Point(210, 32);
+            this.ManageGenresButton.Location = new System.Drawing.Point(280, 39);
+            this.ManageGenresButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ManageGenresButton.Name = "ManageGenresButton";
-            this.ManageGenresButton.Size = new System.Drawing.Size(93, 23);
+            this.ManageGenresButton.Size = new System.Drawing.Size(124, 28);
             this.ManageGenresButton.TabIndex = 2;
             this.ManageGenresButton.Text = "Manage Genres";
             this.ManageGenresButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 98);
+            this.ClientSize = new System.Drawing.Size(423, 121);
             this.Controls.Add(this.ManageGenresButton);
             this.Controls.Add(this.ManageActorsButton);
             this.Controls.Add(this.ManageMoviesButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "CRCMDB";
             this.ResumeLayout(false);
